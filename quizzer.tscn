@@ -1,0 +1,344 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://qhandles.gd" type="Script" id=1]
+
+[sub_resource type="ButtonGroup" id=1]
+
+resource_local_to_scene = true
+
+[node name="Node" type="Node" index="0"]
+
+[node name="Control" type="Control" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+
+[node name="Question" type="TextEdit" parent="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 183.0
+margin_top = 94.0
+margin_right = 537.0
+margin_bottom = 240.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "This is a Sample Question"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = true
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "BBCode", "Rect" ]
+
+[node name="send" type="Button" parent="Control/Question" index="6"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 306.0
+margin_top = 122.0
+margin_right = 349.0
+margin_bottom = 142.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Send"
+flat = false
+align = 1
+
+[node name="GridContainer" type="GridContainer" parent="Control" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 261.0
+margin_top = 439.0
+margin_right = 411.0
+margin_bottom = 483.0
+rect_scale = Vector2( 3, 3 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 2
+_sections_unfolded = [ "Focus", "Grow Direction", "Hint", "Mouse", "Rect", "Size Flags", "Theme", "custom_constants" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Button" type="Button" parent="Control/GridContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 73.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 1"
+flat = false
+align = 1
+
+[node name="Button2" type="Button" parent="Control/GridContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_right = 150.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 2"
+flat = false
+align = 1
+
+[node name="Button3" type="Button" parent="Control/GridContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 73.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 3"
+flat = false
+align = 1
+
+[node name="Button4" type="Button" parent="Control/GridContainer" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_top = 24.0
+margin_right = 150.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 4"
+flat = false
+align = 1
+
+[node name="correct" type="GridContainer" parent="Control" index="2"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 261.0
+margin_top = 439.0
+margin_right = 411.0
+margin_bottom = 483.0
+rect_scale = Vector2( 3, 3 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 2
+_sections_unfolded = [ "Focus", "Grow Direction", "Hint", "Mouse", "Rect", "Size Flags", "Theme", "custom_constants" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Button" type="Button" parent="Control/correct" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 73.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+pressed = true
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 1"
+flat = false
+align = 1
+
+[node name="Button2" type="Button" parent="Control/correct" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_right = 150.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 2"
+flat = false
+align = 1
+
+[node name="Button3" type="Button" parent="Control/correct" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 73.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 3"
+flat = false
+align = 1
+
+[node name="Button4" type="Button" parent="Control/correct" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 77.0
+margin_top = 24.0
+margin_right = 150.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = SubResource( 1 )
+text = "ANSwer 4"
+flat = false
+align = 1
+
+[node name="Scorecard" type="Label" parent="Control" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 23.0
+margin_top = 11.0
+margin_right = 519.0
+margin_bottom = 46.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Player1 "
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[connection signal="pressed" from="Control/Question/send" to="Control" method="_on_send_pressed"]
+
+
